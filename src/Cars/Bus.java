@@ -18,16 +18,21 @@ public class Bus extends Car implements Competing{
 
     @Override
     public String[] competingCars() {
+        System.out.println("DONE");
         return COMPETING_BUS;
     }
 
     @Override
     public int bestTimeRing() {
+        System.out.println("DONE");
         return 0;
+
     }
 
     @Override
     public int maxSpeed() {
+        System.out.println("DONE");
         return 0;
     }
+
 }

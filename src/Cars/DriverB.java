@@ -1,10 +1,13 @@
 package Cars;
 
-public class DriverB<T extends LiteCar>extends Driver {
-    public DriverB(String fio,String skill,boolean havingLicense){
-        super( fio,skill, havingLicense);
-
+public class DriverB<T extends LiteCar> extends Driver<Driver.LicenceB> {
+    public DriverB(String fio, T car) {
+        super(fio, new Driver.LicenceB());
+        this.car = car;
     }
+
+    private T car;
+
     @Override
     String start() {
         return " Go";
@@ -19,7 +22,11 @@ public class DriverB<T extends LiteCar>extends Driver {
     String refuel() {
         return "bllllll";
     }
-    public String massengeCar(LiteCar liteCar){
-        return "driver"+getFio()+liteCar.getBrand()+liteCar.getModel()+"go race";
+
+
+    public void printCarMessage() {
+        System.out.println("водитель " + this.getFio() + " управляет автомобилем "
+                + car.getBrand() + " " + car.getModel() + " и будет участвовать в заезде");
     }
+
 }

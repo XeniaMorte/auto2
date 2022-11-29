@@ -1,6 +1,6 @@
 package Cars;
 
-public abstract  class Car {
+public abstract class Car {
     private String brand;
     private String model;
     int engineVolume;
@@ -21,13 +21,15 @@ public abstract  class Car {
     public void setEngineVolume(int engineVolume) {
         this.engineVolume = engineVolume;
     }
-   public  Car(String brand, String model, int engineVolume){
-        this.brand=brand;
-        this.engineVolume=engineVolume;
-        this.model=model;
 
-   }
-   protected   abstract void startMovieng();
+    public Car(String brand, String model, int engineVolume) {
+        this.brand = brand;
+        this.engineVolume = engineVolume;
+        this.model = model;
+    }
+
+    protected abstract void startMovieng();
+
     protected abstract void stopMovieng();
 
 }

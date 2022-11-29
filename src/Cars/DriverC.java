@@ -1,27 +1,37 @@
 package Cars;
 
-public class DriverC<T extends Bus>extends Driver {
-        public DriverC(String fio,String skill,boolean havingLicense){
-            super( fio,skill, havingLicense);
+public class DriverC<T extends Bus> extends Driver<Driver.LicenceC> {
 
-        }
-        @Override
-        String start() {
-            return " Go";
-        }
 
-        @Override
-        String stop() {
-            return "stop";
-        }
+    public DriverC(String fio, T car) {
+        super(fio, new Driver.LicenceC());
+        this.car = car;
 
-        @Override
-        String refuel() {
-            return "bllllll";
-        }
-        public String massengeCar(Bus bus){
-            return "driver"+getFio()+bus.getBrand()+bus.getModel()+"go race";
-        }
     }
+    private final T car;
+    @Override
+    String start() {
+        return " Go";
+    }
+
+    @Override
+    String stop() {
+        return "stop";
+    }
+
+    @Override
+    String refuel() {
+        return "bllllll";
+    }
+
+
+
+    public void printCarMessage() {
+        System.out.println("водитель " + this.getFio() + " управляет автомобилем "
+                + car.getBrand() + " " + car.getModel() + " и будет участвовать в заезде");
+
+
+    }
+}
 
 

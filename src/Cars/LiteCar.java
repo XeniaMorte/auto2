@@ -1,7 +1,5 @@
 package Cars;
 
-import Cars.Car;
-
 public class LiteCar extends Car {
 
     public LiteCar(String brand, String model, int engineVolume) {
