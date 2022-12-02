@@ -1,8 +1,8 @@
 package Cars;
 
 public class Bus extends Car implements Competing{
-    public Bus(String brand, String model, int engineVolume) {
-        super(brand, model, engineVolume);
+    public Bus(String brand, String model, int engineVolume,TypeCouzov typeCouzov) {
+        super(brand, model, engineVolume,typeCouzov);
     }
     public   static final String[] COMPETING_BUS= {"1", "2", "3"};
 
