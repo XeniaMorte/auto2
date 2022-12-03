@@ -14,5 +14,9 @@ public class BigCar extends Car {
     protected void stopMovieng() {
 
     }
+    @Override
+    public boolean diagnoctic() {
+        return this.diagnoctic();
+    }
 }
 

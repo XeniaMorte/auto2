@@ -39,5 +39,23 @@ public abstract class Car {
             System.out.println(" тип кузова не указан");
         }
     }
+    public boolean diagnoctic(){
+        return diagnoctic();
 
-}
+    }
+    public void ChecIt(Car...cars){
+        int count=0;
+        for (Car car :cars){
+            if (!car.diagnoctic()){
+                try {
+                    throw new RuntimeException(car.getBrand()+" "+car.getBrand()+ "  не прошел диагностику");
+
+                } catch (RuntimeException e) {
+                    System.out.println(e.getMessage());
+                }
+                }
+            else count++;
+            }
+        System.out.println( count + " прошли диагностику ");
+        }
+    }

@@ -35,4 +35,9 @@ public class Bus extends Car implements Competing{
         return 0;
     }
 
+    @Override
+    public boolean diagnoctic() {
+        System.out.println(" ERROR");
+        return false;
+    }
 }

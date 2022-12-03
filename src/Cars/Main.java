@@ -9,10 +9,10 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        LiteCar audi = new LiteCar("audi", "6dcw2", 212,TypeCouzov.HETCHBEK);
-        LiteCar bmw = new LiteCar("BMW", "x4", 300,TypeCouzov.COUPE);
-        LiteCar toyta = new LiteCar("TOY", "rav", 270,TypeCouzov.SEDAN);
-        LiteCar tesla = new LiteCar("T", "69dne3", 312,TypeCouzov.SEDAN);
+        LiteCar audi = new LiteCar("audi", "6dcw2", 212,TypeCouzov.HETCHBEK,true);
+        LiteCar bmw = new LiteCar("BMW", "x4", 300,TypeCouzov.COUPE,true);
+        LiteCar toyta = new LiteCar("TOY", "rav", 270,TypeCouzov.SEDAN,false);
+        LiteCar tesla = new LiteCar("T", "69dne3", 312,TypeCouzov.SEDAN,true);
 
         BigCar maz = new BigCar("maz", "w2", 412,TypeCouzov.FURGON);
         BigCar volvo = new BigCar("Vol", "SCJ", 300,TypeCouzov.FURGON);
@@ -28,6 +28,7 @@ public class Main {
         DriverB driverB = new DriverB("Ivan Petrovich", audi);
         DriverD driverD = new DriverD("Ivan Petrovich", volvo);
         DriverC driverC = new DriverC("Ivan Petrovich", m1);
+
         driverB.printCarMessage();
         driverD.printCarMessage();
         driverC.printCarMessage();
