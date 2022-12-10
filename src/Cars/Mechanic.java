@@ -1,12 +1,15 @@
 package Cars;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 
 public class Mechanic {
     String name;
     String company;
     ArrayList<Car> someCars;
+    public Set<Mechanic>mechanics=new HashSet<>();
 
     public Mechanic(String name, String company, ArrayList<Car> someCars) {
         this.company = company;
@@ -54,5 +57,6 @@ public class Mechanic {
         System.out.println("mexanic " + name + " company " + company + " tO " + car);
 
     }
+
 }
 
