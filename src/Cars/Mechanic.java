@@ -6,9 +6,9 @@ import java.util.Set;
 
 
 public class Mechanic {
-    String name;
-    String company;
-    ArrayList<Car> someCars;
+  private   String name;
+ private    String company;
+   private ArrayList<Car> someCars;
     public Set<Mechanic>mechanics=new HashSet<>();
 
     public Mechanic(String name, String company, ArrayList<Car> someCars) {

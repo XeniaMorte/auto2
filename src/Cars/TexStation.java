@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 
 public class TexStation<T extends Car> {
-    int time;
+   private int time;
 
     public ArrayDeque<T> carQueue=new ArrayDeque<>() ;
 
