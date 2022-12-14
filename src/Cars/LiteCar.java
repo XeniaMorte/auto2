@@ -1,11 +1,13 @@
 package Cars;
 
-import Cars.Car;
-
 public class LiteCar extends Car {
 
-    public LiteCar(String brand, String model, int engineVolume) {
-        super(brand, model, engineVolume);
+   TypeCouzov typeCouzov;
+   boolean didiagnoctic;
+
+    public LiteCar(String brand, String model, int engineVolume, TypeCouzov typeCouzov,boolean didiagnoctic) {
+
+        super(brand, model, engineVolume,typeCouzov);
     }
 
     @Override
@@ -16,5 +18,10 @@ public class LiteCar extends Car {
     @Override
     protected void stopMovieng() {
 
+    }
+
+    @Override
+    public boolean diagnoctic() {
+        return this.diagnoctic();
     }
 }
